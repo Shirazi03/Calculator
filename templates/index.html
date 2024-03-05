@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <title>Techplement Week 1 Project</title>
+</head>
+
+<body class="w-[100vw] h-[100vh] bg-[#000] grid place-items-center">
+    <div class="mainContainer h-[90vh] border-[0.5rem] border-[rgb(50,50,50)] rounded-[2rem]">
+
+        <nav class="w-[98vw] md:w-[70vw] h-[3rem] flex justify-between items-center">
+            <a class="text-yellow-400 underline ml-8" href="#">Calculator</a>
+            <div class="w-[20rem] h-[3rem] flex items-center justify-between px-7">
+                <h2 class="text-white font-bold">History</h2>
+                <div class="flex items-center justify-between px-2 w-[5rem] h-[1.3rem] bg-yellow-400 mr-2 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+                    <h3>Clear</h3>
+                </div>
+            </div>
+        </nav>
+        <div class="w-full h-[80vh] flex justify-between calc_main">
+            <form class="w-[100vw] md:w-[75vw] h-[80vh]">
+                <div class="w-[100%] h-[38%] px-[6rem]">
+                    <input type="text"
+                        class="w-[100%] text-white border-[none] h-[100%] text-[2rem] md:text-[5rem] text-right bg-transparent inputCalc">
+                </div>
+                <div class="w-[100%] h-[60%] grid_place_button">
+                    <div class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem] clear">C</div>
+                    <div class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem] calcBtn">/</div>
+                    <div class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem] calcBtn">*</div>
+                    <div class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem]"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                        <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                      </svg></div>
+                    <div class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem] calcBtn">7</div>
+                    <div class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem] calcBtn">8</div>
+                    <div class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem] calcBtn">9</div>
+                    <div class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem] calcBtn">-</div>
+                    <div class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem] calcBtn">4</div>
+                    <div class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem] calcBtn">5</div>
+                    <div class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem] calcBtn">6</div>
+                    <div class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem] calcBtn">+</div>
+                    <div class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem] calcBtn">1</div>
+                    <div class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem] calcBtn">2</div>
+                    <div class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem] calcBtn">3</div>
+                    <div class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem] calcBtn">%</div>
+                    <div class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem] calcBtn">0</div>
+                    <div class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem] calcBtn">.</div>
+                    <div class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem] calcBtn">( )</div>
+                    <button type="submit" class="bg-gray-800 hover:bg-gray-700 rounded-lg cursor-pointer grid place-items-center text-gray-400 font-bold text-[2rem] solveBtn">=</button>
+                </div>
+            </form>
+            <div class="left_section">
+                <div class="history_main">
+                {% for history in calc_history %}
+                                <div
+                                    class="flex w-[40vw] sm:w-[21vw] h-[4rem] justify-between items-center px-2 mt-3 rounded-lg bg-[rgba(255,255,255,0.1)] historyBox">
+                                    <h2 class="text-yellow-400">8:15AM</h2>
+                                    <div class="flex flex-col items-center">
+                                        <span class="text-gray-400 expression_history">{{history.expression}}</span>
+                                        <span class="text-white font-bold result_calc_history"></span>
+                                    </div>
+                                    
+                                </div>
+                {% endfor %}
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="module" src="../static/main.js"></script>
+
+
+</body>
+
+</html>
